@@ -1,0 +1,105 @@
+[
+  {
+    "ContainingType": "GameBackend.Controllers.GamePostController",
+    "Method": "CreateGamePost",
+    "RelativePath": "api/GamePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameInfoDto",
+        "Type": "GameBackend.Models.Dto.GameInfoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GameBackend.Models.Dto.GameInfoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GameBackend.Controllers.GamePostController",
+    "Method": "GetGamePosts",
+    "RelativePath": "api/GamePost",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GameBackend.Models.Dto.GameInfoDto, GameBackend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GameBackend.Controllers.GamePostController",
+    "Method": "GetGamePost",
+    "RelativePath": "api/GamePost/{gameId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GameBackend.Models.Dto.GameInfoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "GameBackend.Controllers.GamePostController",
+    "Method": "PutUserPost",
+    "RelativePath": "api/GamePost/{gameId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "gameInfoDto",
+        "Type": "GameBackend.Models.Dto.GameInfoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GameBackend.Models.Dto.GameInfoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
